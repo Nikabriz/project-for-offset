@@ -187,9 +187,62 @@
 
 .carusel-btn {
   display: block;
-  width: 40px;
-  height: 40px;
-  border: 1px solid green;
+  width: 20px;
+  height: 20px;
+  margin: 40px;
+  position: relative;
+}
+
+.carusel-btn:after {
+  content: "";
+  display: block;
+  width: 52px;
+  height: 0px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #d3c1ad;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  position: absolute;
+  top: 0px;
+  left: 0;
+  opacity: 0.5;
+}
+
+.carusel-btn::before {
+  content: "";
+  display: block;
+  width: 52px;
+  height: 0px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #d3c1ad;
+  -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg);
+  position: absolute;
+  top: 38px;
+  left: 0;
+  opacity: 0.5;
+}
+
+.carusel-btn:hover::before,
+.carusel-btn:hover::after {
+  border: 2px solid #ccb69d;
+}
+
+.carusel-btn:active::before,
+.carusel-btn:active::after {
+  border: 2px solid #d3c1ad;
+}
+
+.btn-left::after {
+  -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg);
+}
+
+.btn-left::before {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
 }
 
 .carusel-btn:nth-of-type(1) {
@@ -204,6 +257,7 @@
   width: 589px;
   min-height: 200px;
   text-align: center;
+  margin: 0 475px;
 }
 
 .title_h3 {
@@ -233,6 +287,7 @@
   font-size: 16px;
   line-height: 24px;
   color: #ffffff;
+  margin: 0 0 51px 0;
 }
 
 .btn-link {
