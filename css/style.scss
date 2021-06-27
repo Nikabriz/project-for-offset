@@ -153,11 +153,14 @@
         align-items    : center;
         text-decoration: none;
         color          : #fff;
+        margin: 0 0 0 40px;
         padding        : 0 28px 0 0;
     }
 
+
     .bt-svg:last-child {
         padding: 0;
+        margin: 0;
     }
 }
 
@@ -282,15 +285,16 @@
         color           : #fff;
     }
 
-    .carusel-pagination {
-        display        : flex;
-        justify-content: center;
-        width          : 100px;
-        padding        : 5px 0;
-        position       : absolute;
-        bottom         : 0;
-        margin         : auto;
-    }
+
+}
+
+.carusel-pagination {
+    display        : flex;
+    justify-content: center;
+    width          : 100px;
+    padding        : 326px 0 40px 0;
+    bottom         : 0;
+    margin         : auto;
 
     .carusel-pagination-item {
         display         : block;
@@ -316,6 +320,7 @@
         background-color: #ffffff;
     }
 }
+
 
 .project {
     width     : 100%;

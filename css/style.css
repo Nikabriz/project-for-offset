@@ -168,11 +168,13 @@
           align-items: center;
   text-decoration: none;
   color: #fff;
+  margin: 0 0 0 40px;
   padding: 0 28px 0 0;
 }
 
 .page-header .bt-svg:last-child {
   padding: 0;
+  margin: 0;
 }
 
 .carusel {
@@ -309,7 +311,7 @@
   color: #fff;
 }
 
-.carusel .carusel-pagination {
+.carusel-pagination {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,13 +319,12 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 100px;
-  padding: 5px 0;
-  position: absolute;
+  padding: 326px 0 40px 0;
   bottom: 0;
   margin: auto;
 }
 
-.carusel .carusel-pagination-item {
+.carusel-pagination .carusel-pagination-item {
   display: block;
   width: 10px;
   height: 10px;
@@ -333,13 +334,13 @@
   background-color: #ffffff;
 }
 
-.carusel .carusel-pagination-item:hover {
+.carusel-pagination .carusel-pagination-item:hover {
   background-color: #998675;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-.carusel .carusel-pagination-item:active {
+.carusel-pagination .carusel-pagination-item:active {
   width: 10px;
   height: 10px;
   margin: 0 5px;
