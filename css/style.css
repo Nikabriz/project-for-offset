@@ -476,7 +476,7 @@
 
 .portfolio .multi-foto .photo-landscape:first-child {
   position: absolute;
-  top: 80px;
+  top: 84px;
   left: 345px;
   z-index: 1;
   width: 770px;
@@ -485,18 +485,93 @@
 
 .portfolio .multi-foto .photo-landscape:nth-child(2) {
   width: 770px;
-  height: 482px;
+  height: 484px;
   margin: 0 auto;
   z-index: 2;
 }
 
 .portfolio .multi-foto .photo-landscape:last-child {
   position: absolute;
-  top: 80px;
+  top: 84px;
   right: 345px;
   z-index: 0;
   width: 770px;
   height: 400px;
+}
+
+.blurb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 150px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: -webkit-gradient(linear, left top, right top, from(#211b19), to(#4e3427));
+  background-image: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+}
+
+.blurb .blurb-wrapper {
+  width: 531px;
+  margin: 0 470px 0 0;
+}
+
+.blurb .blurb-title {
+  width: 100%;
+  margin: 0;
+  font-size: 28px;
+  font-family: 'raleway', 'arial', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.blurb .blurb-title span {
+  color: #c7b299;
+}
+
+.blurb .blurb-txt {
+  width: 100%;
+  margin: 0;
+  font-size: 18px;
+  font-family: 'montserrat', 'arial', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #615855;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.blurb .blurb-button {
+  width: 170px;
+  min-height: 50px;
+  border: none;
+  border-bottom: 2px solid #736357;
+  border-radius: 3px;
+  background-color: #998675;
+  -webkit-box-shadow: inset 0px 3px 0px 0px rgba(115, 99, 87, 0.004);
+          box-shadow: inset 0px 3px 0px 0px rgba(115, 99, 87, 0.004);
+}
+
+.blurb .blurb-button-txt {
+  font-family: 'raleway', 'arial', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .block {
