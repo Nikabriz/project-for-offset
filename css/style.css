@@ -205,8 +205,8 @@
   display: inline-block;
   width: 52px;
   height: 52px;
-  border-top: 2px solid #d3c1ad;
-  border-right: 2px solid #d3c1ad;
+  border-top: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   position: absolute;
@@ -215,8 +215,8 @@
 }
 
 .carusel .slider-arrow:hover:after {
-  border-top: 2px solid orange;
-  border-right: 2px solid orange;
+  border-top: 2px solid #d3c1ad;
+  border-right: 2px solid #d3c1ad;
 }
 
 .carusel .btn-left::after {
@@ -244,7 +244,7 @@
   margin: 0 475px;
 }
 
-.carusel .title_h3 {
+.carusel .title_txt {
   font-family: 'raleway', 'arial', sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -428,5 +428,79 @@
   line-height: 24px;
   color: #8c8c8c;
   text-align: center;
+}
+
+.portfolio {
+  width: 100%;
+  min-height: 700px;
+  background-color: #fbfaf8;
+}
+
+.portfolio .title-h3 {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 84px;
+  text-align: center;
+  font-family: 'raleway', 'arial', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #555555;
+}
+
+.portfolio .text {
+  width: 100%;
+  max-width: 757px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  text-align: center;
+  font-family: 'montserrat', 'arial', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #8c8c8c;
+}
+
+.portfolio .multi-foto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.portfolio .multi-foto .photo-landscape:first-child {
+  position: absolute;
+  top: 80px;
+  left: 345px;
+  z-index: 1;
+  width: 770px;
+  height: 400px;
+}
+
+.portfolio .multi-foto .photo-landscape:nth-child(2) {
+  width: 770px;
+  height: 482px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.portfolio .multi-foto .photo-landscape:last-child {
+  position: absolute;
+  top: 80px;
+  right: 345px;
+  z-index: 0;
+  width: 770px;
+  height: 400px;
+}
+
+.block {
+  width: 100%;
+  min-height: 400px;
+  background-color: antiquewhite;
 }
 /*# sourceMappingURL=style.css.map */
