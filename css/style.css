@@ -193,59 +193,35 @@
   position: relative;
 }
 
-.carusel .carusel-btn {
+.carusel .slider-arrow {
   display: block;
-  width: 20px;
-  height: 20px;
-  margin: 40px;
+  width: 40px;
+  height: 73px;
   position: relative;
 }
 
-.carusel .carusel-btn:after {
+.carusel .slider-arrow:after {
   content: "";
-  display: block;
+  display: inline-block;
   width: 52px;
-  height: 0px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #d3c1ad;
-  -webkit-transform: rotate(225deg);
-          transform: rotate(225deg);
+  height: 52px;
+  border-top: 2px solid #d3c1ad;
+  border-right: 2px solid #d3c1ad;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   position: absolute;
-  top: 0px;
-  left: 0;
-  opacity: 0.5;
+  top: 10px;
+  left: -25px;
 }
 
-.carusel .carusel-btn::before {
-  content: "";
-  display: block;
-  width: 52px;
-  height: 0px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #d3c1ad;
-  -webkit-transform: rotate(-225deg);
-          transform: rotate(-225deg);
-  position: absolute;
-  top: 38px;
-  left: 0;
-  opacity: 0.5;
-}
-
-.carusel .carusel-btn:hover::before,
-.carusel .carusel-btn:hover::after {
-  border: 2px solid #ccb69d;
-}
-
-.carusel .carusel-btn:active::before,
-.carusel .carusel-btn:active::after {
-  border: 2px solid #d3c1ad;
+.carusel .slider-arrow:hover:after {
+  border-top: 2px solid orange;
+  border-right: 2px solid orange;
 }
 
 .carusel .btn-left::after {
-  -webkit-transform: rotate(-225deg);
-          transform: rotate(-225deg);
+  -webkit-transform: rotate(-140deg);
+          transform: rotate(-140deg);
 }
 
 .carusel .btn-left::before {

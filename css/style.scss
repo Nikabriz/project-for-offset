@@ -171,57 +171,33 @@
     margin         : 0 auto;
     position       : relative;
 
-    .carusel-btn {
-        display : block;
-        width   : 20px;
-        height  : 20px;
-        margin  : 40px;
+    .slider-arrow {
+        display: block;
+        width: 40px;
+        height: 73px;
         position: relative;
-    }
-
-    .carusel-btn:after {
-        content     : "";
-        display     : block;
-        width       : 52px;
-        height      : 0px;
-        border-width: 2px;
-        border-style: solid;
-        border-color: #d3c1ad;
-        transform   : rotate(225deg);
-        position    : absolute;
-        top         : 0px;
-        left        : 0;
-        opacity     : 0.5;
-    }
-
-    .carusel-btn::before {
-        content     : "";
-        display     : block;
-        width       : 52px;
-        height      : 0px;
-        border-width: 2px;
-        border-style: solid;
-        border-color: #d3c1ad;
-
-        transform: rotate(-225deg);
-        position : absolute;
-        top      : 38px;
-        left     : 0;
-        opacity  : 0.5;
-    }
-
-    .carusel-btn:hover::before,
-    .carusel-btn:hover::after {
-        border: 2px solid #ccb69d;
-    }
-
-    .carusel-btn:active::before,
-    .carusel-btn:active::after {
-        border: 2px solid #d3c1ad;
-    }
+      }
+      
+      .slider-arrow:after {
+        content: "";
+        display: inline-block;
+        width: 52px;
+        height: 52px;
+        border-top: 2px solid #d3c1ad;
+        border-right: 2px solid #d3c1ad;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 10px;
+        left: -25px;
+      }
+      
+      .slider-arrow:hover:after {
+        border-top: 2px solid orange;
+        border-right: 2px solid orange;
+      }
 
     .btn-left::after {
-        transform: rotate(-225deg);
+        transform: rotate(-140deg);
     }
 
     .btn-left::before {
