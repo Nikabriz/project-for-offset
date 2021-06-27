@@ -328,11 +328,12 @@
 
     .carusel-pagination-item:hover {
         background-color: #998675;
+        transform: scale(1.2);
     }
 
     .carusel-pagination-item:active {
-        width           : 12px;
-        height          : 12px;
+        width           : 10px;
+        height          : 10px;
         margin          : 0 5px;
         border-radius   : 50%;
         opacity         : 0.9;
