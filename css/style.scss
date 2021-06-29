@@ -326,6 +326,7 @@
     }
 }
 
+/*Main*/
 
 .project {
     width     : 100%;
@@ -529,11 +530,67 @@
 }
 
 
-.block {
-    width           : 100%;
-    min-height      : 400px;
-    background-color: antiquewhite;
+.card {
+    width     : 100%;
+    min-height: 400px;
+
+    .card-product {
+        display        : flex;
+        flex-wrap      : wrap;
+        justify-content: space-between;
+        padding: 0 375px;
+    }
+
+    .card-title {
+        width      : 100%;
+        margin     : 0 auto;
+        padding-top: 84px;
+        text-align : center;
+        font-family: 'raleway', 'arial', sans-serif;
+        font-weight: 600;
+        font-style : normal;
+        font-size  : 30px;
+        line-height: 1.2;
+        color      : #555555;
+    }
+
+    .card-text {
+        width         : 100%;
+        max-width     : 757px;
+        margin        : 0 auto;
+        padding-bottom: 40px;
+        text-align    : center;
+        font-family   : 'montserrat', 'arial', sans-serif;
+        font-weight   : 300;
+        font-style    : normal;
+        font-size     : 16px;
+        line-height   : 28px;
+        color         : #8c8c8c;
+    }
+
+    .card-item {
+        list-style     : none;
+        display        : flex;
+        justify-content: center;
+ 
+    }
+
+    .card-item-list {
+        margin-left  : 9px;
+        margin-bottom: 39px;
+  
+    }
+
+    .card-list:last-child {
+        margin-left: 0;
+    }
 }
+
+
+
+
+
+/*Адаптив*/
 
 @media (max-width: 1680px) {
     .content {
