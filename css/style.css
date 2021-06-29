@@ -56,34 +56,48 @@
 /*HEADER*/
 .content {
   width: 100%;
-  min-height: 1024px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/bg_photo_11949.png);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bg_photo_11949.png);
-  background-size: cover;
+  min-height: 1024px;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
+  padding: 40px 150px 0 150px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .page-header {
-  width: 1140px;
-  padding: 38px 0 0 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  max-width: 1124px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: inherit;
-  margin: 0 0 196px 354px;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .page-header .menu {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .page-header .header-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -129,7 +143,6 @@
   width: 181px;
   text-decoration: none;
   color: #fff;
-  margin: 0 200px 0 0;
 }
 
 .page-header .logo-svg {
@@ -168,8 +181,7 @@
           align-items: center;
   text-decoration: none;
   color: #fff;
-  margin: 0 0 0 40px;
-  padding: 0 28px 0 0;
+  padding: 0 28px;
 }
 
 .page-header .bt-svg:last-child {
@@ -191,7 +203,7 @@
           align-items: center;
   width: 100%;
   min-height: 400px;
-  margin: 0 auto;
+  margin: 309px 0 0 0;
   position: relative;
 }
 
@@ -578,5 +590,11 @@
   width: 100%;
   min-height: 400px;
   background-color: antiquewhite;
+}
+
+@media (max-width: 1680px) {
+  .content {
+    background-size: cover;
+  }
 }
 /*# sourceMappingURL=style.css.map */

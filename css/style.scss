@@ -60,28 +60,34 @@
 
 .content {
     width            : 100%;
-    min-height       : 1024px;
     background-image : linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bg_photo_11949.png);
-    background-size  : cover;
+    min-height       : 1024px;
+    background-size  : 100% 100%;
     background-repeat: no-repeat;
+    padding          : 40px 150px 0 150px;
+    box-sizing       : border-box;
 }
 
 .page-header {
-    width           : 1140px;
-    padding         : 38px 0 0 0;
-    box-sizing      : border-box;
+    max-width       : 1124px;
+    margin          : 0 auto;
     display         : flex;
     background-color: inherit;
-    margin          : 0 0 196px 354px;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    align-content   : center;
+
 
     .menu {
-        width: 100%;
+        width          : 100%;
+        display        : flex;
+        justify-content: flex-end;
 
     }
 
     .header-item {
         display        : flex;
-        padding        : 0;
         justify-content: center;
     }
 
@@ -120,7 +126,7 @@
         width          : 181px;
         text-decoration: none;
         color          : #fff;
-        margin         : 0 200px 0 0;
+
     }
 
     .logo-svg {
@@ -153,8 +159,7 @@
         align-items    : center;
         text-decoration: none;
         color          : #fff;
-        margin         : 0 0 0 40px;
-        padding        : 0 28px 0 0;
+        padding        : 0 28px;
     }
 
 
@@ -171,7 +176,7 @@
     align-items    : center;
     width          : 100%;
     min-height     : 400px;
-    margin         : 0 auto;
+    margin         : 309px 0 0 0;
     position       : relative;
 
     .slider-arrow {
@@ -511,7 +516,7 @@
     }
 
     .blurb-button-txt {
-                font-family   : 'raleway', 'arial', sans-serif;
+        font-family   : 'raleway', 'arial', sans-serif;
         font-weight   : 800;
         font-style    : normal;
         font-size     : 14px;
@@ -528,4 +533,10 @@
     width           : 100%;
     min-height      : 400px;
     background-color: antiquewhite;
+}
+
+@media (max-width: 1680px) {
+    .content {
+        background-size: cover;
+    }
 }
