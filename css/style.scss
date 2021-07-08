@@ -1298,19 +1298,62 @@
     height          : 111px;
     background-color: #111111;
     margin          : 0 auto;
+  
     display         : flex;
-    justify-content : space-between;
-    text-align      : justify;
+    justify-content : space-evenly;
+    align-items     : center;
+    text-align      : center;
 
     .contacts-item {
-        list-style : none;
+        list-style     : none;
         text-decoration: none;
-        font-family: Montserrat;
-        font-size  : 13px;
-        line-height: 20px;
-        font-weight: 300;
-        color      : #555555;
+        font-family    : Montserrat;
+        font-size      : 13px;
+        line-height    : 20px;
+        font-weight    : 300;
+        color          : #555555;
     }
+
+    .contacts-item-list {
+        display        : inline;
+        text-decoration: none;
+        list-style     : none;
+        font-family    : Montserrat;
+        font-size      : 13px;
+        line-height    : 20px;
+        font-weight    : 300;
+        color          : #555555;
+    }
+
+    .contacts-item-list-link {
+        text-decoration: none;
+        list-style     : none;
+        font-family    : Montserrat;
+        font-size      : 13px;
+        line-height    : 20px;
+        font-weight    : 300;
+        color          : #555555;
+    }
+
+    .logos {
+        color: #959595;
+    }
+
+    .contacts-item-list-link:hover {
+        color: #c7b299;
+    }
+
+    .contacts-item-list::after {
+        content: "|";
+        display: inline;
+        color  : #252525;
+    }
+
+    .contacts-item-list:last-child:after {
+        content: " ";
+
+    }
+
 }
 
 
