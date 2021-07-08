@@ -1253,33 +1253,50 @@
     }
 }
 
+.brand {
+    width           : 100%;
+    min-height      : 490px;
+    margin          : 0 auto;
+    display         : flex;
+    justify-content : space-between;
+    background-image: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/bg_photo_logo.png);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Адаптив*/
-
-@media (max-width: 1680px) {
-    .content {
-        background-size: cover;
+    .brand-logo {
+        height     : 210px;
+        margin     : auto 0;
+        align-items: center;
+        text-align : center;
     }
 
-    .promo {
-        .promo-description {
-            padding: 15% 0 0 55%;
+    .brand-logo-img {
+        align-items: center;
+        text-align : center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*Адаптив*/
+
+    @media (max-width: 1680px) {
+        .content {
+            background-size: cover;
+        }
+
+        .promo {
+            .promo-description {
+                padding: 15% 0 0 55%;
+            }
         }
     }
-}
