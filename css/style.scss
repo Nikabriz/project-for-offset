@@ -1288,13 +1288,19 @@
     height          : 508px;
     background-color: #191919;
     margin          : 0 auto;
+    padding         : 80px auto;
 
     .footer-preview {
-        width          : 22%;
+        max-width      : 275px;
         display        : inline-block;
         justify-content: space-between;
         flex-wrap      : wrap;
-        padding        : 80px 0;
+        align-items    : flex-start;
+        margin-right   : 30px;
+
+        .footer-preview:last-child {
+            margin-right: 0;
+        }
 
         .footer-preview-logo {
             display        : flex;
@@ -1379,6 +1385,36 @@
         .footer-hr {
             text-decoration : none;
             background-color: #191919;
+        }
+
+        .footer-img {
+            background-color: #777777;
+            display         : flex;
+            justify-content : space-between;
+            box-sizing      : border-box;
+            flex-wrap       : wrap;
+            width           : 100%;
+            max-width       : 130px;
+            height          : 98px;
+            margin          : 0;
+        }
+
+        .widget1 {
+
+            background-image: url('../img/footer1.png');
+        }
+
+        .widget2 {
+
+            background-image: url('../img/footer3.png');
+        }
+
+        .widget3 {
+            background-image: url('../img/footer2.png');
+        }
+
+        .widget4 {
+            background-image: url('../img/footer4.png');
         }
     }
 
