@@ -1174,6 +1174,42 @@
                 }
             }
         }
+
+        .blog-item:hover {
+            background-color: #362f2d;
+        }
+
+        .blog-item:hover .blog-calendar-date {
+            color           : #ffffff;
+            background-color: #c7b299;
+        }
+
+        .blog-item:hover .blog-calendar-mo {
+            color           : #ffffff;
+            background-color: #a48d72;
+        }
+
+        .blog-item:hover .blog-card-title {
+            color: #c7b299;
+        }
+
+        .blog-item:hover .blog-card-text {
+            color: #ffffff;
+        }
+
+        .blog-item:hover .blog-card-link {
+            color: #c7b299;
+        }
+
+        .blog-item:hover .blog-card-link::after {
+            color: #c7b299;
+        }
+
+        .blog-item:hover .blog-img {
+            opacity: 0.7;
+        }
+
+
     }
 
     .blog-card {
@@ -1380,6 +1416,14 @@
             top        : 4px;
             width      : 0;
             height     : 0;
+        }
+
+        .footer-card-link:hover {
+            color: #c7b299;
+        }
+
+        .footer-card-link::after:hover {
+            color: #c7b299
         }
 
         .footer-title {
