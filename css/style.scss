@@ -1289,9 +1289,12 @@
     background-color: #191919;
     margin          : 0 auto;
     padding         : 80px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .footer-preview {
-        max-width      : 275px;
+        width          : 275px;
         display        : inline-block;
         justify-content: space-between;
         flex-wrap      : wrap;
@@ -1389,8 +1392,8 @@
 
         .footer-img {
             background-color: #777777;
-            display         : flex;
-            justify-content : space-between;
+            display         : inline-block;
+            justify-content : center;
             box-sizing      : border-box;
             flex-wrap       : wrap;
             width           : 100%;
@@ -1400,17 +1403,20 @@
         }
 
         .widget1 {
-
+            margin-right   : 8px;
+            margin-bottom  : 8px;
             background-image: url('../img/footer1.png');
         }
 
         .widget2 {
 
-            background-image: url('../img/footer3.png');
+            margin-bottom  : 8px;
+            background-image: url('../img/footer2.png');
         }
 
         .widget3 {
-            background-image: url('../img/footer2.png');
+            margin-right   : 8px;
+            background-image: url('../img/footer3.png');
         }
 
         .widget4 {
