@@ -1213,7 +1213,19 @@
             font-style     : normal;
             color          : #c7b299;
             text-decoration: none;
+            position       : relative;
         }
+    }
+
+    .blog-card-link::after {
+        content    : " ";
+        position   : absolute;
+        border     : 5px solid transparent;
+        border-left: 8px solid #c7b299;
+        right      : -20px;
+        top        : 6px;
+        width      : 0;
+        height     : 0;
     }
 
     .blog-pagination {
@@ -1289,9 +1301,9 @@
     background-color: #191919;
     margin          : 0 auto;
     padding         : 80px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
 
     .footer-preview {
         width          : 275px;
@@ -1347,6 +1359,7 @@
         }
 
         .footer-card-link {
+            width          : 100%;
             font-family    : 'montserrat', 'arial', sans-serif;
             font-size      : 14px;
             line-height    : 20px;
@@ -1354,6 +1367,19 @@
             font-style     : normal;
             color          : #d1d1d1;
             text-decoration: none;
+            position       : relative;
+            margin-right   : 9px;
+        }
+
+        .footer-card-link::after {
+            content    : " ";
+            position   : absolute;
+            border     : 5px solid transparent;
+            border-left: 8px solid #d1d1d1;
+            right      : -20px;
+            top        : 4px;
+            width      : 0;
+            height     : 0;
         }
 
         .footer-title {
@@ -1373,7 +1399,18 @@
             font-weight    : 300;
             font-style     : normal;
             color          : #555555;
+        }
 
+        .twitter {
+            color: #00bff3;
+        }
+
+        .posts:hover {
+            color: #c7b299;
+        }
+
+        .posts:hover .posts-time {
+            color: #ffffff;
         }
 
         .footer-time {
@@ -1403,19 +1440,19 @@
         }
 
         .widget1 {
-            margin-right   : 8px;
-            margin-bottom  : 8px;
+            margin-right    : 8px;
+            margin-bottom   : 8px;
             background-image: url('../img/footer1.png');
         }
 
         .widget2 {
 
-            margin-bottom  : 8px;
+            margin-bottom   : 8px;
             background-image: url('../img/footer2.png');
         }
 
         .widget3 {
-            margin-right   : 8px;
+            margin-right    : 8px;
             background-image: url('../img/footer3.png');
         }
 
