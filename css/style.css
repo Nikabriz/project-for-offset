@@ -504,13 +504,13 @@
   top: 84px;
   left: 345px;
   z-index: 1;
-  width: 770px;
-  height: 400px;
+  max-width: 770px;
+  max-height: 400px;
 }
 
 .portfolio .multi-foto .photo-landscape:nth-child(2) {
-  width: 770px;
-  height: 484px;
+  max-width: 770px;
+  max-height: 484px;
   margin: 0 auto;
   z-index: 2;
 }
@@ -520,8 +520,8 @@
   top: 84px;
   right: 345px;
   z-index: 0;
-  width: 770px;
-  height: 400px;
+  max-width: 770px;
+  max-height: 400px;
 }
 
 .blurb {
@@ -682,9 +682,9 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   padding: 0 375px;
 }
 
@@ -1022,7 +1022,7 @@
 
 .static {
   width: 100%;
-  height: 300px;
+  min-height: 300px;
   background-color: #f4f5f8;
   background-image: -webkit-gradient(linear, left top, right top, from(#211b19), to(#4e3427));
   background-image: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
@@ -1081,32 +1081,32 @@
 
 .static .clients {
   width: 136px;
-  height: 172px;
+  min-height: 172px;
   margin: 0 73px 0 0;
 }
 
 .static .cups {
   width: 126px;
-  height: 172px;
+  min-height: 172px;
   margin: 0 81px 0 0;
 }
 
 .static .posts {
   width: 115px;
-  height: 172px;
+  min-height: 172px;
   margin: 0 105px 0 0;
 }
 
 .static .likes {
   width: 75px;
-  height: 172px;
+  min-height: 172px;
   margin: 0 110px 0 0;
   padding: 0 5px;
 }
 
 .static .launched {
   width: 111px;
-  height: 172px;
+  min-height: 172px;
 }
 
 .static .static-item:after {
@@ -1131,7 +1131,7 @@
 
 .blog {
   width: 100%;
-  max-height: 705px;
+  min-height: 705px;
   padding: 82px 0;
 }
 
@@ -1445,7 +1445,7 @@
 
 .footer {
   width: 100%;
-  height: 508px;
+  min-height: 508px;
   background-color: #191919;
   margin: 0 auto;
   padding: 80px auto;
@@ -1598,6 +1598,7 @@
 .footer .footer-preview .footer-hr {
   text-decoration: none;
   background-color: #191919;
+  opacity: 0.8;
 }
 
 .footer .footer-preview .footer-img {
@@ -1612,7 +1613,7 @@
       flex-wrap: wrap;
   width: 100%;
   max-width: 130px;
-  height: 98px;
+  min-height: 98px;
   margin: 0;
 }
 
@@ -1709,6 +1710,110 @@
   }
   .promo .promo-description {
     padding: 15% 0 0 55%;
+  }
+  .card .card-product {
+    padding: 0 10px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 1024px) {
+  .multi-foto {
+    width: 100%;
+  }
+  .multi-foto .photo-landscape:first-child {
+    width: 50%;
+  }
+  .multi-foto .photo-landscape:nth-child(2) {
+    width: 50%;
+  }
+  .multi-foto .photo-landscape:last-child {
+    width: 50%;
+  }
+  .brand-item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 0 auto;
+  }
+  .brand-item .brand-logo-img {
+    max-height: 80px;
+    margin: 0;
+  }
+  .static-item *:after {
+    display: none;
+  }
+  .card .card-product {
+    padding: 0 10px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .blurb .blurb-wrapper {
+    margin: 0 400px 0 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 40px 50px 0 50px;
+  }
+  .page-header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 auto 195px;
+  }
+  .carusel .carusel-txt {
+    max-width: 574px;
+  }
+  .carusel .title_h2 {
+    font-size: 40px;
+  }
+  .carusel .title_txt {
+    font-size: 25px;
+  }
+  .brand-logo {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 50px;
+  }
+  .card .card-product {
+    width: 100%;
+    padding: 0;
+  }
+  .multi-foto {
+    width: 100%;
+  }
+  .multi-foto .photo-landscape:first-child {
+    width: 50%;
+  }
+  .multi-foto .photo-landscape:nth-child(2) {
+    width: 50%;
+  }
+  .multi-foto .photo-landscape:last-child {
+    width: 50%;
+  }
+  .blurb .blurb-wrapper {
+    margin: 0 400px 0 0;
+  }
+}
+
+@media (max-width: 710px) {
+  .blurb .blurb-wrapper {
+    margin: 0 400px 0 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
