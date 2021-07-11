@@ -1769,20 +1769,21 @@
 @media (max-width: 768px) {
   .content {
     padding: 40px 50px 0 50px;
+    min-height: 230px;
   }
   .page-header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 0 auto 195px;
+    margin: 0 auto;
   }
-  .carusel .carusel-txt {
-    max-width: 574px;
+  .promo {
+    display: none;
   }
-  .carusel .title_h2 {
-    font-size: 40px;
+  .carusel {
+    display: none;
   }
-  .carusel .title_txt {
-    font-size: 25px;
+  .carusel-pagination {
+    display: none;
   }
   .brand-logo {
     -ms-flex-wrap: wrap;
