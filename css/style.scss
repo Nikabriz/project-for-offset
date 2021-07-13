@@ -61,6 +61,13 @@
     font-style : normal;
 }
 
+@font-face {
+    font-family: MyriadPro;
+    src        : url("../fonts/myriadpro-regular.ttf");
+    font-weight: 400;
+    font-style : normal;
+}
+
 
 .conteiner {
     max-width: 1920px;
@@ -479,8 +486,8 @@
     background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
 
     .blurb-wrapper {
-        max-width : 531px;
-        margin: 0 470px 0 0;
+        max-width: 531px;
+        margin   : 0 470px 0 0;
     }
 
     .blurb-title {
@@ -512,7 +519,7 @@
     }
 
     .blurb-button {
-        min-width           : 170px;
+        min-width       : 170px;
         min-height      : 50px;
         border          : none;
         border-bottom   : 2px solid #736357;
@@ -1677,7 +1684,7 @@
         margin         : 0 auto;
         display        : flex;
         justify-content: space-between;
-        position: relative;
+        position       : relative;
     }
 
     .page-header .menu {
@@ -1685,7 +1692,7 @@
     }
 
     .page-header .mobile-menu {
-        position: absolute;
+        position       : absolute;
         display        : flex;
         align-items    : center;
         justify-content: flex-end;
@@ -1751,8 +1758,8 @@
             transition-delay: .2s;
             overflow        : hidden;
             background-color: #d1d1d1;
-     
-         }
+
+        }
 
         &__list {
             transition      : .5s;
@@ -1775,7 +1782,7 @@
         &__checkbox {
             display: none;
 
-            &:checked ~ {
+            &:checked~ {
                 .mobile-menu {
 
                     &__nav {
@@ -1784,7 +1791,7 @@
                     }
 
                     &__container {
-                        min-height          : 450px;
+                        min-height      : 450px;
                         transition-delay: 0s;
                     }
 
@@ -1867,17 +1874,63 @@
 }
 
 @media (max-width: 710px) {
-
-    .blurb .blurb-wrapper {
-        margin   : 0 50px 0 0;
-        display  : flex;
+    .blurb {
         flex-wrap: wrap;
 
+        .blurb-txt {
+            text-align    : center;
+            padding-bottom: 44px;
+        }
+
+        .blurb-wrapper {
+            margin   : 0;
+            display  : flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    .Features-project .features {
+        margin-bottom: 43px;
+    }
+
+    .static .clients {
+        margin: 0 73px 0 73px;
+    }
+
+    .static .posts {
+        margin: 0 105px 0 105px;
+    }
+
+    .static .launched {
+        margin-bottom: 66px;
     }
 
     .video {
         display: none;
     }
+
+    .blog .blog-title {
+        margin: 0 auto 22px;
+    }
+
+    .blog .blog-text {
+        font-family: 'MyriadPro', 'arial', sans-serif;
+        font-size  : 16.7px;
+        line-height: 20px;
+        font-weight: 400;
+        font-style : normal;
+        color      : #8c8c8c;
+    }
+
+    .blog .publication .blog-item {
+        border       : 1px solid #f8f8f8;
+        margin-bottom: 73px;
+    }
+
+    .blog .publication .blog-item:last-child {
+        margin-bottom: 0;
+    }
+
 
     .brand-logo {
         display      : flex;
@@ -1902,7 +1955,7 @@
 @media (max-width: 480px) {
     .card .card-item {
         flex-wrap: wrap;
-        padding: 0;
+        padding  : 0;
     }
 
     .blurb {
@@ -1910,6 +1963,7 @@
     }
 
     .blurb .blurb-wrapper {
-        max-width: 530px; 
+        max-width: 530px;
+        margin   : 0;
     }
 }

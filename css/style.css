@@ -62,6 +62,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: MyriadPro;
+  src: url("../fonts/myriadpro-regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
 .conteiner {
   max-width: 1920px;
   width: 100%;
@@ -1959,16 +1966,54 @@
 }
 
 @media (max-width: 710px) {
+  .blurb {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .blurb .blurb-txt {
+    text-align: center;
+    padding-bottom: 44px;
+  }
   .blurb .blurb-wrapper {
-    margin: 0 50px 0 0;
+    margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .Features-project .features {
+    margin-bottom: 43px;
+  }
+  .static .clients {
+    margin: 0 73px 0 73px;
+  }
+  .static .posts {
+    margin: 0 105px 0 105px;
+  }
+  .static .launched {
+    margin-bottom: 66px;
+  }
   .video {
     display: none;
+  }
+  .blog .blog-title {
+    margin: 0 auto 22px;
+  }
+  .blog .blog-text {
+    font-family: 'MyriadPro', 'arial', sans-serif;
+    font-size: 16.7px;
+    line-height: 20px;
+    font-weight: 400;
+    font-style: normal;
+    color: #8c8c8c;
+  }
+  .blog .publication .blog-item {
+    border: 1px solid #f8f8f8;
+    margin-bottom: 73px;
+  }
+  .blog .publication .blog-item:last-child {
+    margin-bottom: 0;
   }
   .brand-logo {
     display: -webkit-box;
@@ -2003,6 +2048,7 @@
   }
   .blurb .blurb-wrapper {
     max-width: 530px;
+    margin: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
